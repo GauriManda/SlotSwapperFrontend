@@ -1,16 +1,41 @@
-# React + Vite
+# 🎨 SlotSwapper Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🧩 Overview
+The **SlotSwapper Frontend** is a React-based interface for the SlotSwapper web app — a peer-to-peer scheduling platform where users can mark, view, and swap their calendar slots with others.
 
-Currently, two official plugins are available:
+It communicates with the backend REST API to handle authentication, event management, and swap requests.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tech Stack
+- React (Vite)
+- Context API for state management
+- Fetch / Axios for API calls
+- Plain CSS for responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1️⃣ Clone and Navigate
+```bash
+git clone https://github.com/yourusername/slotswapper-frontend.git
+cd slotswapper-frontend
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Configure API Base URL
+
+In src/App.jsx, set your backend API endpoint:
+
+const API_BASE_URL = "http://localhost:5000/api";
+
+
+(If deployed, replace with your live backend URL.)
+
+4️⃣ Run the Frontend
+npm run dev
+
+
+Now open http://localhost:5173
+ in your browser.
