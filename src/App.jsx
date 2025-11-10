@@ -19,7 +19,7 @@ const AppContent = () => {
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <div>
         {currentPage === 'dashboard' && <Dashboard />}
-        {currentPage === 'marketplace' && <Marketplace />}
+        {currentPage === 'marketplace' && <BrowseSlots />}
         {currentPage === 'requests' && <Requests />}
       </div>
     </div>
